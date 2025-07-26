@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goldbach Orbital 10e20</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Goldbach Orbital 10<sup>20</sup></h1>
+    <p>
+      This site predicts a Goldbach pair (p, q) such that <code>E = p + q</code>,
+      using the orbital predictor:<br />
+      <code>δ(E) ≈ √E · loglog(E) / log(E)</code><br />
+      Optimized for even numbers up to <strong>10²⁰</strong>. Returns only the closest valid pair.
+    </p>
+
+    <label for="evenInput">Enter an even number E:</label>
+    <input type="text" id="evenInput" placeholder="Ex: 10000000000000000000" />
+    <button onclick="predict()">Predict (p, q)</button>
+
+    <div id="result" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
